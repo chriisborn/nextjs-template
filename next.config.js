@@ -1,4 +1,12 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+module.exports = {
+	/*assetPrefix:
+		process.env.NODE_ENV === 'production' ? 'https://cdn.domain.com' : undefined,*/
 
-module.exports = nextConfig
+	reactStrictMode: true,
+	trailingSlash: true,
+	poweredByHeader: false,
+
+	devIndicators: {
+		buildActivity: false
+	}
+}

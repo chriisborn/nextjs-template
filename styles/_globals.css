@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media (prefers-color-scheme: dark) {
+	* {
+		color-scheme: dark;
+	}
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header,
+footer,
+nav {
+	flex: 0 0 auto;
+}
+
+main {
+	flex: 1 0 auto;
+}
