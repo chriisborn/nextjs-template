@@ -1,6 +1,32 @@
 {
+	"version": "0.2.0",
 	"name": "nextjs-template",
-	"version": "0.1.0",
+	"description": "A Next.js starter template to provide a streamlined development process for future projects.",
+	"homepage": "https://github.com/chriisborn/nextjs-template/wiki",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chriisborn/nextjs-template.git"
+	},
+	"bugs": {
+		"url": "https://github.com/chriisborn/nextjs-template/issues"
+	},
+	"keywords": [
+		"template",
+		"next",
+		"js",
+		"tailwind",
+		"css",
+		"react",
+		"javascript",
+		"post",
+		"es",
+		"lint",
+		"ecmascript",
+		"auto",
+		"prefixer"
+	],
+	"author": "Chris Born",
+	"license": "MIT",
 	"private": false,
 	"scripts": {
 		"dev": "next dev",
@@ -9,6 +35,10 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@tabler/icons-react": "^2.19.0",
+		"@tailwindcss/aspect-ratio": "^0.4.2",
+		"@tailwindcss/forms": "^0.5.3",
+		"@vercel/analytics": "^1.0.1",
 		"autoprefixer": "10.4.14",
 		"eslint": "8.40.0",
 		"eslint-config-next": "13.4.2",

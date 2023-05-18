@@ -1,0 +1,10 @@
+{
+	"useTabs": true,
+	"vueIndentScriptAndStyle": true,
+	"bracketSameLine": false,
+	"printWidth": 90,
+	"semi": false,
+	"useEditorConfig": true,
+	"singleQuote": true,
+	"trailingComma": "none"
+}
