@@ -1,4 +1,9 @@
 {
-	"title": "@chriisborn's Next.js template",
+	"en": "English",
+	"pt": "Português",
+	"es": "Español",
+
+	"title": "@chriisborn's Next.js %s",
+	"template": "template",
 	"description": "A Next.js starter template to provide a streamlined development process for future projects."
 }

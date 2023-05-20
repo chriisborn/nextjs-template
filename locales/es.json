@@ -1,4 +1,9 @@
 {
-	"title": "Plantilla Next.js de @chriisborn",
+	"en": "English",
+	"pt": "Português",
+	"es": "Español",
+
+	"title": "%s Next.js de @chriisborn",
+	"template": "Plantilla",
 	"description": "Una plantilla de inicio Next.js para proporcionar un proceso de desarrollo simplificado para proyectos futuros."
 }

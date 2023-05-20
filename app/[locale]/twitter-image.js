@@ -1,5 +1,5 @@
 import { ImageResponse } from 'next/server'
-import { useDictionary } from 'utilities/dictionary'
+import useDictionary from 'utilities/dictionary'
 
 export const runtime = 'edge'
 export const contentType = 'image/png'

@@ -1,4 +1,9 @@
 {
-	"title": "Modelo Next.js de @chriisborn",
+	"en": "English",
+	"pt": "Português",
+	"es": "Español",
+
+	"title": "%s Next.js de @chriisborn",
+	"template": "Modelo",
 	"description": "Um modelo inicial Next.js para fornecer um processo de desenvolvimento simplificado para projetos futuros."
 }

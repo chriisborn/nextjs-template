@@ -7,16 +7,17 @@ import Footer from 'components/layout/footer'
 import Header from 'components/layout/header'
 import Navbar from 'components/layout/navbar'
 
-import { useDictionary } from 'utilities/dictionary'
+import { sprintf } from 'sprintf-js'
+import getDictionary from 'utilities/dictionary'
 
 export async function generateMetadata({ params: { locale } }) {
 	// eslint-disable-next-line react-hooks/rules-of-hooks
-	const dictionary = await useDictionary(locale)
+	const dictionary = await getDictionary(locale)
 
 	return {
 		title: {
-			default: dictionary.title,
-			template: `%s | ${dictionary.title}`
+			default: sprintf(dictionary.title, dictionary.template),
+			template: `%s | ${sprintf(dictionary.title, dictionary.template)}`
 		},
 		metadataBase: new URL(process.env.url),
 		alternates: {
@@ -37,10 +38,11 @@ export default function RootLayout({ children, params: { locale } }) {
 	return (
 		<html lang={locale}>
 			<body>
-				<Header />
-				<main>{children}</main>
+				<Header locale={locale} />
+				<main className="bg-zinc-100 dark:bg-zinc-900">{children}</main>
 				<Footer />
 				<Navbar />
+
 				<Analytics />
 			</body>
 		</html>
