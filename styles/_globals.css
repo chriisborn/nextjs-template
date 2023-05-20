@@ -31,3 +31,8 @@ nav {
 main {
 	flex: 1 0 auto;
 }
+
+nav {
+	position: sticky;
+	bottom: 0;
+}

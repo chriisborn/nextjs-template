@@ -1,5 +1,5 @@
 {
-	"version": "0.2.0",
+	"version": "0.5.1",
 	"name": "nextjs-template",
 	"description": "A Next.js starter template to provide a streamlined development process for future projects.",
 	"homepage": "https://github.com/chriisborn/nextjs-template/wiki",
@@ -15,10 +15,10 @@
 		"next",
 		"js",
 		"tailwind",
+		"post",
 		"css",
 		"react",
 		"javascript",
-		"post",
 		"es",
 		"lint",
 		"ecmascript",
@@ -35,6 +35,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@formatjs/intl-localematcher": "^0.2.32",
 		"@tabler/icons-react": "^2.19.0",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
 		"@tailwindcss/forms": "^0.5.3",
@@ -42,10 +43,12 @@
 		"autoprefixer": "10.4.14",
 		"eslint": "8.40.0",
 		"eslint-config-next": "13.4.2",
+		"negotiator": "^0.6.3",
 		"next": "13.4.2",
 		"postcss": "8.4.23",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
+		"sprintf-js": "^1.1.2",
 		"tailwindcss": "3.3.2"
 	}
 }
