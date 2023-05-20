@@ -17,6 +17,18 @@ export async function generateMetadata({ params: { locale } }) {
 		title: {
 			default: dictionary.title,
 			template: `%s | ${dictionary.title}`
+		},
+		metadataBase: new URL(process.env.url),
+		alternates: {
+			canonical: '/',
+			languages: (() => {
+				const languages = {}
+				const locales = process.env.locales.split(',')
+
+				locales.forEach((item) => (languages[item] = `/${item}`))
+
+				return languages
+			})()
 		}
 	}
 }

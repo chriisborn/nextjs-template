@@ -21,13 +21,20 @@ export const config = {
 
 export function middleware(request) {
 	const locale = getLocale(request)
-	const pathname = request.nextUrl.pathname
+	const search = request.nextUrl.search
+	let pathname = request.nextUrl.pathname
+
+	if (pathname.split('/').includes('[locale]')) {
+		pathname = pathname.replace('/[locale]', '')
+	}
 
 	const isMissingLocale = locales.every(
 		(locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
 	)
 
 	if (isMissingLocale) {
-		return NextResponse.redirect(new URL(`/${locale}/${pathname}`, request.url))
+		return NextResponse.redirect(
+			new URL(`/${locale}/${pathname}${search && search}`, request.url)
+		)
 	}
 }

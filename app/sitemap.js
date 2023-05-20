@@ -1,11 +1,13 @@
 export default function SitemapGenerator() {
+	const url = process.env.url
+
 	return [
-		/*{
-			url: 'https://domain.com',
-			lastModified: new Date()
-		},
 		{
-			url: 'https://domain.com/page',
+			url,
+			lastModified: new Date()
+		}
+		/*{
+			url: `${url}/page`,
 			lastModified: new Date()
 		}*/
 	]

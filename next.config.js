@@ -3,7 +3,7 @@ module.exports = {
 		process.env.NODE_ENV === 'production' ? 'https://cdn.domain.com' : undefined,*/
 
 	reactStrictMode: true,
-	trailingSlash: true,
+	trailingSlash: false,
 	poweredByHeader: false,
 
 	devIndicators: {
